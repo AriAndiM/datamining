@@ -488,8 +488,8 @@ title="Print to PDF"
 <h1><strong>Tugas 7 - Stacking &amp; Bagging</strong><a class="headerlink" href="#tugas-7-stacking-bagging" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import warnings</span>
+<span class="c1"># warnings.filterwarnings(&quot;ignore&quot;)</span>
 </pre></div>
 </div>
 </div>
@@ -538,7 +538,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9bce6d51-b2e2-40a2-a67d-e338e23da407">
+  <div id="df-7e13fa2c-92a4-4641-b318-8f1c96c87e49">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -838,7 +838,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9bce6d51-b2e2-40a2-a67d-e338e23da407')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7e13fa2c-92a4-4641-b318-8f1c96c87e49')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -889,12 +889,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9bce6d51-b2e2-40a2-a67d-e338e23da407 button.colab-df-convert');
+          document.querySelector('#df-7e13fa2c-92a4-4641-b318-8f1c96c87e49 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9bce6d51-b2e2-40a2-a67d-e338e23da407');
+          const element = document.querySelector('#df-7e13fa2c-92a4-4641-b318-8f1c96c87e49');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -923,8 +923,12 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/pandas/core/generic.py:4150: PerformanceWarning: dropping on a non-lexsorted multi-index without a level parameter may impact performance.
+  obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+</pre></div>
+</div>
 <div class="output text_html">
-  <div id="df-9a7be1b6-e48d-4793-adef-79e7f252c993">
+  <div id="df-e3c6a6ae-a065-42b8-bb44-ab44e5484762">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1212,7 +1216,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9a7be1b6-e48d-4793-adef-79e7f252c993')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e3c6a6ae-a065-42b8-bb44-ab44e5484762')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1263,12 +1267,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9a7be1b6-e48d-4793-adef-79e7f252c993 button.colab-df-convert');
+          document.querySelector('#df-e3c6a6ae-a065-42b8-bb44-ab44e5484762 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9a7be1b6-e48d-4793-adef-79e7f252c993');
+          const element = document.querySelector('#df-e3c6a6ae-a065-42b8-bb44-ab44e5484762');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1311,8 +1315,14 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output text_html">
-  <div id="df-4ee04e79-6744-430d-8aef-3dcc5d8b4955">
+  <div id="df-afe2245a-9071-4deb-8207-6b6c74bb5363">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1577,7 +1587,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4ee04e79-6744-430d-8aef-3dcc5d8b4955')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-afe2245a-9071-4deb-8207-6b6c74bb5363')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1628,12 +1638,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4ee04e79-6744-430d-8aef-3dcc5d8b4955 button.colab-df-convert');
+          document.querySelector('#df-afe2245a-9071-4deb-8207-6b6c74bb5363 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4ee04e79-6744-430d-8aef-3dcc5d8b4955');
+          const element = document.querySelector('#df-afe2245a-9071-4deb-8207-6b6c74bb5363');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1691,6 +1701,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/preprocessing/_label.py:115: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+</pre></div>
+</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 1, ..., 0, 1, 0])
 </pre></div>
 </div>
@@ -1721,6 +1735,16 @@ title="Print to PDF"
 <span class="n">y_train_pred</span> <span class="o">=</span> <span class="n">gnb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 <span class="c1"># Predicting the test set</span>
 <span class="n">y_test_pred</span> <span class="o">=</span> <span class="n">gnb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 </div>
@@ -1774,6 +1798,12 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="stacking-random-forest">
@@ -1796,6 +1826,30 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 2 = 0.6406926406926406
 acuracy n = 3 = 0.645021645021645
 acuracy n = 4 = 0.6493506493506493
@@ -1805,9 +1859,43 @@ acuracy n = 7 = 0.6493506493506493
 acuracy n = 8 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 9 = 0.6363636363636364
 acuracy n = 10 = 0.645021645021645
 acuracy n = 11 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 12 = 0.658008658008658
@@ -1816,8 +1904,44 @@ acuracy n = 14 = 0.6666666666666666
 acuracy n = 15 = 0.6666666666666666
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 16 = 0.658008658008658
 acuracy n = 17 = 0.658008658008658
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 18 = 0.658008658008658
@@ -1825,35 +1949,131 @@ acuracy n = 19 = 0.658008658008658
 acuracy n = 20 = 0.658008658008658
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 21 = 0.658008658008658
 acuracy n = 22 = 0.6666666666666666
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 23 = 0.6666666666666666
-acuracy n = 24 = 0.6666666666666666
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 25 = 0.6666666666666666
-acuracy n = 26 = 0.6666666666666666
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 23 = 0.6666666666666666
+acuracy n = 24 = 0.6666666666666666
+acuracy n = 25 = 0.6666666666666666
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 26 = 0.6666666666666666
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 27 = 0.6536796536796536
 acuracy n = 28 = 0.6623376623376623
+acuracy n = 29 = 0.6536796536796536
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 29 = 0.6536796536796536
-acuracy n = 30 = 0.658008658008658
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 30 = 0.658008658008658
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 31 = 0.658008658008658
 acuracy n = 32 = 0.658008658008658
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 33 = 0.6536796536796536
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 34 = 0.6493506493506493
-acuracy n = 35 = 0.6536796536796536
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 33 = 0.6536796536796536
+acuracy n = 34 = 0.6493506493506493
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 35 = 0.6536796536796536
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 36 = 0.6493506493506493
@@ -1863,11 +2083,43 @@ acuracy n = 37 = 0.645021645021645
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 38 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 39 = 0.6406926406926406
 acuracy n = 40 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 41 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 42 = 0.6406926406926406
@@ -1877,11 +2129,41 @@ acuracy n = 43 = 0.6406926406926406
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 44 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 45 = 0.6493506493506493
 acuracy n = 46 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 47 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 48 = 0.6536796536796536
@@ -1891,342 +2173,1024 @@ acuracy n = 49 = 0.658008658008658
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 50 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 51 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 52 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 53 = 0.6320346320346321
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 52 = 0.6363636363636364
+acuracy n = 53 = 0.6320346320346321
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 54 = 0.6320346320346321
+acuracy n = 55 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 55 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 56 = 0.6363636363636364
+acuracy n = 57 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 57 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 58 = 0.6320346320346321
+acuracy n = 59 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 59 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 60 = 0.6320346320346321
+acuracy n = 61 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 61 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 62 = 0.6320346320346321
+acuracy n = 63 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 63 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 64 = 0.6320346320346321
+acuracy n = 65 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 65 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 66 = 0.6363636363636364
+acuracy n = 67 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 67 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 68 = 0.6320346320346321
+acuracy n = 69 = 0.6320346320346321
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 69 = 0.6320346320346321
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 70 = 0.6320346320346321
+acuracy n = 71 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 71 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 72 = 0.6363636363636364
+acuracy n = 73 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 73 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 74 = 0.6363636363636364
+acuracy n = 75 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 75 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 76 = 0.6363636363636364
+acuracy n = 77 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 77 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 78 = 0.6363636363636364
+acuracy n = 79 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 79 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 80 = 0.6363636363636364
+acuracy n = 81 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 81 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 82 = 0.6363636363636364
+acuracy n = 83 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 83 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 84 = 0.6363636363636364
+acuracy n = 85 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 85 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 86 = 0.6363636363636364
+acuracy n = 87 = 0.6363636363636364
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 87 = 0.6363636363636364
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 88 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 89 = 0.6363636363636364
 acuracy n = 90 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 91 = 0.6363636363636364
 acuracy n = 92 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 93 = 0.6406926406926406
 acuracy n = 94 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 95 = 0.6363636363636364
 acuracy n = 96 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 97 = 0.6363636363636364
 acuracy n = 98 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 99 = 0.6406926406926406
 acuracy n = 100 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 101 = 0.6406926406926406
 acuracy n = 102 = 0.6406926406926406
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 103 = 0.6406926406926406
-acuracy n = 104 = 0.645021645021645
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 105 = 0.645021645021645
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 103 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 104 = 0.645021645021645
+acuracy n = 105 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 106 = 0.645021645021645
-acuracy n = 107 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 107 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 108 = 0.645021645021645
-acuracy n = 109 = 0.645021645021645
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 110 = 0.645021645021645
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 109 = 0.645021645021645
+acuracy n = 110 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 111 = 0.645021645021645
-acuracy n = 112 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 112 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 113 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 114 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 115 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 116 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 117 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 118 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 119 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 120 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 121 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 122 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 123 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 124 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 125 = 0.6493506493506493
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 126 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 127 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 128 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 129 = 0.6493506493506493
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 130 = 0.6493506493506493
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 131 = 0.6493506493506493
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 132 = 0.6493506493506493
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 133 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 134 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 135 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 136 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 137 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 138 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 139 = 0.645021645021645
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 140 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 141 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 142 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 143 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 144 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 145 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 146 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 147 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 148 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 149 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 150 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 151 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 152 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 153 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 154 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 155 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 156 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 157 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 158 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 159 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 160 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 161 = 0.6363636363636364
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 162 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 163 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 164 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 165 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 166 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 167 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 168 = 0.6406926406926406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 169 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 170 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 171 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 172 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 173 = 0.645021645021645
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 174 = 0.645021645021645
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
@@ -2238,74 +3202,120 @@ acuracy n = 112 = 0.6363636363636364
 <span class="g g-Whitespace">      </span><span class="mi">7</span>   <span class="n">bag_test</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_forest.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span>             <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span>
-<span class="g g-Whitespace">    </span><span class="mi">440</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_make_estimator</span><span class="p">(</span><span class="n">append</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
-<span class="nn">--&gt; 441                 for i</span> in <span class="ni">range</span><span class="nt">(n_more_estimators)</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span>             <span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">443</span> 
+<span class="g g-Whitespace">    </span><span class="mi">465</span>                     <span class="n">n_samples_bootstrap</span><span class="o">=</span><span class="n">n_samples_bootstrap</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">466</span>                 <span class="p">)</span>
+<span class="nn">--&gt; 467                 for i, t</span> in <span class="ni">enumerate</span><span class="nt">(trees)</span>
+<span class="g g-Whitespace">    </span><span class="mi">468</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">469</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_forest.py</span> in <span class="ni">&lt;listcomp&gt;</span><span class="nt">(.0)</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span>             <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span>
-<span class="g g-Whitespace">    </span><span class="mi">440</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_make_estimator</span><span class="p">(</span><span class="n">append</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
-<span class="nn">--&gt; 441                 for i</span> in <span class="ni">range</span><span class="nt">(n_more_estimators)</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span>             <span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">443</span> 
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">__call__</span><span class="nt">(self, iterable)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1086</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_iterating</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_original_iterator</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1087</span> 
+<span class="ne">-&gt; </span><span class="mi">1088</span>             <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">dispatch_one_batch</span><span class="p">(</span><span class="n">iterator</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1089</span>                 <span class="k">pass</span>
+<span class="g g-Whitespace">   </span><span class="mi">1090</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_base.py</span> in <span class="ni">_make_estimator</span><span class="nt">(self, append, random_state)</span>
-<span class="g g-Whitespace">    </span><span class="mi">169</span> 
-<span class="g g-Whitespace">    </span><span class="mi">170</span>         <span class="k">if</span> <span class="n">random_state</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">171</span>             <span class="n">_set_random_states</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">random_state</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">172</span> 
-<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">if</span> <span class="n">append</span><span class="p">:</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">dispatch_one_batch</span><span class="nt">(self, iterator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">899</span>                 <span class="k">return</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">900</span>             <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">901</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_dispatch</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">902</span>                 <span class="k">return</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">903</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_base.py</span> in <span class="ni">_set_random_states</span><span class="nt">(estimator, random_state)</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="n">random_state</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="n">random_state</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">75</span>     <span class="n">to_set</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="ne">---&gt; </span><span class="mi">76</span>     <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)):</span>
-<span class="g g-Whitespace">     </span><span class="mi">77</span>         <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;random_state&quot;</span> <span class="ow">or</span> <span class="n">key</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;__random_state&quot;</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">78</span>             <span class="n">to_set</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">random_state</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">_dispatch</span><span class="nt">(self, batch)</span>
+<span class="g g-Whitespace">    </span><span class="mi">817</span>         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">818</span>             <span class="n">job_idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_jobs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">819</span>             <span class="n">job</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">cb</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">820</span>             <span class="c1"># A job can complete so quickly than its callback is</span>
+<span class="g g-Whitespace">    </span><span class="mi">821</span>             <span class="c1"># called before we get here, causing self._jobs to</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/base.py</span> in <span class="ni">get_params</span><span class="nt">(self, deep)</span>
-<span class="g g-Whitespace">    </span><span class="mi">207</span>         <span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">208</span><span class="sd">         out = dict()</span>
-<span class="ne">--&gt; </span><span class="mi">209</span><span class="sd">         for key in self._get_param_names():</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span><span class="sd">             value = getattr(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="sd">             if deep and hasattr(value, &quot;get_params&quot;):</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/_parallel_backends.py</span> in <span class="ni">apply_async</span><span class="nt">(self, func, callback)</span>
+<span class="g g-Whitespace">    </span><span class="mi">206</span>     <span class="k">def</span> <span class="nf">apply_async</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">207</span>         <span class="sd">&quot;&quot;&quot;Schedule a func to be run&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">208</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">ImmediateResult</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>         <span class="k">if</span> <span class="n">callback</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>             <span class="n">callback</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/base.py</span> in <span class="ni">_get_param_names</span><span class="nt">(cls)</span>
-<span class="g g-Whitespace">    </span><span class="mi">172</span><span class="sd">         # introspect the constructor arguments to find the model parameters</span>
-<span class="g g-Whitespace">    </span><span class="mi">173</span><span class="sd">         # to represent</span>
-<span class="ne">--&gt; </span><span class="mi">174</span><span class="sd">         init_signature = inspect.signature(init)</span>
-<span class="g g-Whitespace">    </span><span class="mi">175</span><span class="sd">         # Consider the constructor parameters excluding &#39;self&#39;</span>
-<span class="g g-Whitespace">    </span><span class="mi">176</span><span class="sd">         parameters = [</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/_parallel_backends.py</span> in <span class="ni">__init__</span><span class="nt">(self, batch)</span>
+<span class="g g-Whitespace">    </span><span class="mi">595</span>         <span class="c1"># Don&#39;t delay the application, to avoid keeping the input</span>
+<span class="g g-Whitespace">    </span><span class="mi">596</span>         <span class="c1"># arguments in memory</span>
+<span class="ne">--&gt; </span><span class="mi">597</span>         <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="o">=</span> <span class="n">batch</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">598</span> 
+<span class="g g-Whitespace">    </span><span class="mi">599</span>     <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-<span class="nn">/usr/lib/python3.7/inspect.py</span> in <span class="ni">signature</span><span class="nt">(obj, follow_wrapped)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3081</span><span class="sd"> def signature(obj, *, follow_wrapped=True):</span>
-<span class="g g-Whitespace">   </span><span class="mi">3082</span><span class="sd">     &quot;&quot;&quot;</span><span class="n">Get</span> <span class="n">a</span> <span class="n">signature</span> <span class="nb">object</span> <span class="k">for</span> <span class="n">the</span> <span class="n">passed</span> <span class="n">callable</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">3083</span><span class="s2">     return Signature.from_callable(obj, follow_wrapped=follow_wrapped)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3084</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">3085</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">__call__</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span>         <span class="k">with</span> <span class="n">parallel_backend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_n_jobs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">288</span>             <span class="k">return</span> <span class="p">[</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">289</span>                     <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> 
+<span class="g g-Whitespace">    </span><span class="mi">291</span>     <span class="k">def</span> <span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-<span class="nn">/usr/lib/python3.7/inspect.py</span> in <span class="ni">from_callable</span><span class="nt">(cls, obj, follow_wrapped)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2831</span><span class="s2">         &quot;&quot;&quot;</span><span class="n">Constructs</span> <span class="n">Signature</span> <span class="k">for</span> <span class="n">the</span> <span class="n">given</span> <span class="n">callable</span> <span class="nb">object</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">2832</span><span class="s2">         return _signature_from_callable(obj, sigcls=cls,</span>
-<span class="ne">-&gt; </span><span class="mi">2833</span><span class="s2">                                         follow_wrapper_chains=follow_wrapped)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2834</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">2835</span><span class="s2">     @property</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">&lt;listcomp&gt;</span><span class="nt">(.0)</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span>         <span class="k">with</span> <span class="n">parallel_backend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_n_jobs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">288</span>             <span class="k">return</span> <span class="p">[</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">289</span>                     <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> 
+<span class="g g-Whitespace">    </span><span class="mi">291</span>     <span class="k">def</span> <span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-<span class="nn">/usr/lib/python3.7/inspect.py</span> in <span class="ni">_signature_from_callable</span><span class="nt">(obj, follow_wrapper_chains, skip_bound_arg, sigcls)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2282</span><span class="s2">         # If it&#39;s a pure Python function, or an object that is duck type</span>
-<span class="g g-Whitespace">   </span><span class="mi">2283</span><span class="s2">         # of a Python function (Cython functions, for instance), then:</span>
-<span class="ne">-&gt; </span><span class="mi">2284</span><span class="s2">         return _signature_from_function(sigcls, obj)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2285</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">2286</span><span class="s2">     if _signature_is_builtin(obj):</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/utils/fixes.py</span> in <span class="ni">__call__</span><span class="nt">(self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span>     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>         <span class="k">with</span> <span class="n">config_context</span><span class="p">(</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">216</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">217</span> 
+<span class="g g-Whitespace">    </span><span class="mi">218</span> 
 
-<span class="nn">/usr/lib/python3.7/inspect.py</span> in <span class="ni">_signature_from_function</span><span class="nt">(cls, func)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2132</span><span class="s2">     func_code = func.__code__</span>
-<span class="g g-Whitespace">   </span><span class="mi">2133</span><span class="s2">     pos_count = func_code.co_argcount</span>
-<span class="ne">-&gt; </span><span class="mi">2134</span><span class="s2">     arg_names = func_code.co_varnames</span>
-<span class="g g-Whitespace">   </span><span class="mi">2135</span><span class="s2">     positional = tuple(arg_names[:pos_count])</span>
-<span class="g g-Whitespace">   </span><span class="mi">2136</span><span class="s2">     keyword_only_count = func_code.co_kwonlyargcount</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_forest.py</span> in <span class="ni">_parallel_build_trees</span><span class="nt">(tree, forest, X, y, sample_weight, tree_idx, n_trees, verbose, class_weight, n_samples_bootstrap)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span>             <span class="n">curr_sample_weight</span> <span class="o">*=</span> <span class="n">compute_sample_weight</span><span class="p">(</span><span class="s2">&quot;balanced&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">indices</span><span class="o">=</span><span class="n">indices</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span> 
+<span class="ne">--&gt; </span><span class="mi">185</span>         <span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">curr_sample_weight</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">187</span>         <span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/tree/_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">940</span>             <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">941</span>             <span class="n">check_input</span><span class="o">=</span><span class="n">check_input</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">942</span>             <span class="n">X_idx_sorted</span><span class="o">=</span><span class="n">X_idx_sorted</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">943</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">944</span>         <span class="k">return</span> <span class="bp">self</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/tree/_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">152</span>     <span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">153</span> 
+<span class="ne">--&gt; </span><span class="mi">154</span>         <span class="n">random_state</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">155</span> 
+<span class="g g-Whitespace">    </span><span class="mi">156</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ccp_alpha</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py</span> in <span class="ni">check_random_state</span><span class="nt">(seed)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1055</span>         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">mtrand</span><span class="o">.</span><span class="n">_rand</span>
+<span class="g g-Whitespace">   </span><span class="mi">1056</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Integral</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1057</span>         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1058</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1059</span>         <span class="k">return</span> <span class="n">seed</span>
+
+<span class="nn">mtrand.pyx</span> in <span class="ni">numpy.random.mtrand.RandomState.__init__</span><span class="nt">()</span>
+
+<span class="nn">_mt19937.pyx</span> in <span class="ni">numpy.random._mt19937.MT19937.__init__</span><span class="nt">()</span>
+
+<span class="nn">/usr/lib/python3.7/contextlib.py</span> in <span class="ni">inner</span><span class="nt">(*args, **kwds)</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>         <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">72</span>         <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">73</span>             <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recreate_cm</span><span class="p">():</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>                 <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span>         <span class="k">return</span> <span class="n">inner</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/numpy/core/_ufunc_config.py</span> in <span class="ni">__enter__</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">428</span> 
+<span class="g g-Whitespace">    </span><span class="mi">429</span>     <span class="k">def</span> <span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">430</span>         <span class="bp">self</span><span class="o">.</span><span class="n">oldstate</span> <span class="o">=</span> <span class="n">seterr</span><span class="p">(</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">431</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">call</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">_Unspecified</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">432</span>             <span class="bp">self</span><span class="o">.</span><span class="n">oldcall</span> <span class="o">=</span> <span class="n">seterrcall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">call</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/numpy/core/_ufunc_config.py</span> in <span class="ni">seterr</span><span class="nt">(all, divide, over, under, invalid)</span>
+<span class="g g-Whitespace">    </span><span class="mi">125</span> 
+<span class="g g-Whitespace">    </span><span class="mi">126</span>     <span class="n">pyvals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">maskvalue</span>
+<span class="ne">--&gt; </span><span class="mi">127</span>     <span class="n">umath</span><span class="o">.</span><span class="n">seterrobj</span><span class="p">(</span><span class="n">pyvals</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span>     <span class="k">return</span> <span class="n">old</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span> 
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -2957,7 +3967,7 @@ acuracy n = 499 = 0.6406926406926406
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-48c34f49-7ddc-450f-81ea-079b52852087">
+  <div id="df-40a946d5-261c-4c1a-8435-8f4c2c33df21">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3222,7 +4232,7 @@ acuracy n = 499 = 0.6406926406926406
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-48c34f49-7ddc-450f-81ea-079b52852087')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-40a946d5-261c-4c1a-8435-8f4c2c33df21')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3273,12 +4283,12 @@ acuracy n = 499 = 0.6406926406926406
 
       <script>
         const buttonEl =
-          document.querySelector('#df-48c34f49-7ddc-450f-81ea-079b52852087 button.colab-df-convert');
+          document.querySelector('#df-40a946d5-261c-4c1a-8435-8f4c2c33df21 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-48c34f49-7ddc-450f-81ea-079b52852087');
+          const element = document.querySelector('#df-40a946d5-261c-4c1a-8435-8f4c2c33df21');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

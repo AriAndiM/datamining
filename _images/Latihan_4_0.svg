@@ -12,8 +12,8 @@
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<path fill="#ffffff" stroke="#000000" d="M532.5,-663C532.5,-663 403.5,-663 403.5,-663 397.5,-663 391.5,-657 391.5,-651 391.5,-651 391.5,-592 391.5,-592 391.5,-586 397.5,-580 403.5,-580 403.5,-580 532.5,-580 532.5,-580 538.5,-580 544.5,-586 544.5,-592 544.5,-592 544.5,-651 544.5,-651 544.5,-657 538.5,-663 532.5,-663"/>
-<text text-anchor="start" x="399.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal width (cm) ≤ 0.8</text>
+<path fill="#ffffff" stroke="#000000" d="M539.5,-663C539.5,-663 396.5,-663 396.5,-663 390.5,-663 384.5,-657 384.5,-651 384.5,-651 384.5,-592 384.5,-592 384.5,-586 390.5,-580 396.5,-580 396.5,-580 539.5,-580 539.5,-580 545.5,-580 551.5,-586 551.5,-592 551.5,-592 551.5,-651 551.5,-651 551.5,-657 545.5,-663 539.5,-663"/>
+<text text-anchor="start" x="392.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal length (cm) ≤ 2.45</text>
 <text text-anchor="start" x="430" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.667</text>
 <text text-anchor="start" x="420" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 150</text>
 <text text-anchor="start" x="406" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [50, 50, 50]</text>

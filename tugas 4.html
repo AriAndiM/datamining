@@ -166,7 +166,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="tugas%207.html">
    <strong>
-    Tugas 7 - Diabetic Retinopathy
+    TUGAS 7 - Diabetic Retinopathy
    </strong>
   </a>
  </li>
@@ -372,73 +372,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   <strong>
-    TUGAS 4-Naive Bayes
-   </strong>
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-library">
-   Import Library
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#load-dataset-iris">
-   Load Dataset Iris
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#drop-fitur-label">
-   Drop fitur label
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#memisahkan-values-dan-class">
-   Memisahkan values dan class
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#splitting-data">
-   Splitting Data
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hasil-akurasi">
-   Hasil Akurasi
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hasil-prediksi">
-   Hasil Prediksi
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -450,56 +389,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   <strong>
-    TUGAS 4-Naive Bayes
-   </strong>
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-library">
-   Import Library
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#load-dataset-iris">
-   Load Dataset Iris
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#drop-fitur-label">
-   Drop fitur label
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#memisahkan-values-dan-class">
-   Memisahkan values dan class
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#splitting-data">
-   Splitting Data
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hasil-akurasi">
-   Hasil Akurasi
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hasil-prediksi">
-   Hasil Prediksi
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -512,9 +401,7 @@ title="Print to PDF"
 <blockquote>
 <div><p><em>Naïve Bayes Classifier merupakan sebuah metoda klasifikasi yang berakar pada teorema Bayes . Metode pengklasifikasian dg menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes , yaitu memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes . Ciri utama dr Naïve Bayes Classifier ini adalah asumsi yg sangat kuat (naïf) akan independensi dari masing-masing kondisi / kejadian.</em></p>
 </div></blockquote>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="import-library">
-<h1>Import Library<a class="headerlink" href="#import-library" title="Permalink to this headline">#</a></h1>
+<p>Import Library</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -551,9 +438,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="load-dataset-iris">
-<h1>Load Dataset Iris<a class="headerlink" href="#load-dataset-iris" title="Permalink to this headline">#</a></h1>
+<p>Load Dataset Iris</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">colnames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">]</span>
@@ -565,7 +450,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4d98883b-0ca9-4cbf-9ee5-60f0cb276f35">
+  <div id="df-2973c9b2-4bbe-4a39-b951-217d5ff04684">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -685,7 +570,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4d98883b-0ca9-4cbf-9ee5-60f0cb276f35')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2973c9b2-4bbe-4a39-b951-217d5ff04684')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -736,12 +621,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4d98883b-0ca9-4cbf-9ee5-60f0cb276f35 button.colab-df-convert');
+          document.querySelector('#df-2973c9b2-4bbe-4a39-b951-217d5ff04684 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4d98883b-0ca9-4cbf-9ee5-60f0cb276f35');
+          const element = document.querySelector('#df-2973c9b2-4bbe-4a39-b951-217d5ff04684');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -762,9 +647,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="drop-fitur-label">
-<h1>Drop fitur label<a class="headerlink" href="#drop-fitur-label" title="Permalink to this headline">#</a></h1>
+<p>Drop fitur label</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;variety&#39;</span><span class="p">)</span>
@@ -774,7 +657,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fb856e2d-2920-4a75-b49c-dccee39266b4">
+  <div id="df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -882,7 +765,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fb856e2d-2920-4a75-b49c-dccee39266b4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -933,12 +816,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fb856e2d-2920-4a75-b49c-dccee39266b4 button.colab-df-convert');
+          document.querySelector('#df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fb856e2d-2920-4a75-b49c-dccee39266b4');
+          const element = document.querySelector('#df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -967,9 +850,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="memisahkan-values-dan-class">
-<h1>Memisahkan values dan class<a class="headerlink" href="#memisahkan-values-dan-class" title="Permalink to this headline">#</a></h1>
+<p>Memisahkan values dan class</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># separate target </span>
@@ -983,9 +864,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="splitting-data">
-<h1>Splitting Data<a class="headerlink" href="#splitting-data" title="Permalink to this headline">#</a></h1>
+<p>Splitting Data</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -993,9 +872,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-akurasi">
-<h1>Hasil Akurasi<a class="headerlink" href="#hasil-akurasi" title="Permalink to this headline">#</a></h1>
+<p>Hasil Akurasi</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
@@ -1013,9 +890,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-prediksi">
-<h1>Hasil Prediksi<a class="headerlink" href="#hasil-prediksi" title="Permalink to this headline">#</a></h1>
+<p>Hasil Prediksi</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_pred</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">colnames</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">colnames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]])],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1025,7 +900,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cc173f95-16b0-4d79-a37d-d8f5f61f3b99">
+  <div id="df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1416,7 +1291,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cc173f95-16b0-4d79-a37d-d8f5f61f3b99')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1467,12 +1342,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cc173f95-16b0-4d79-a37d-d8f5f61f3b99 button.colab-df-convert');
+          document.querySelector('#df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cc173f95-16b0-4d79-a37d-d8f5f61f3b99');
+          const element = document.querySelector('#df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

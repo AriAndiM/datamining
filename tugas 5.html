@@ -166,7 +166,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="tugas%207.html">
    <strong>
-    Tugas 7 - Diabetic Retinopathy
+    TUGAS 7 - Diabetic Retinopathy
    </strong>
   </a>
  </li>
@@ -454,6 +454,7 @@ title="Print to PDF"
 <li><p>Model sudah siap.</p></li>
 </ol>
 </div></blockquote>
+<p>Load dataset</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -475,7 +476,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0fcea641-3770-4ac4-8622-ea7ec42e1ee5">
+  <div id="df-9a5c7111-e6aa-4b06-b13e-16bcb4dcb76d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -546,7 +547,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0fcea641-3770-4ac4-8622-ea7ec42e1ee5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9a5c7111-e6aa-4b06-b13e-16bcb4dcb76d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -597,12 +598,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0fcea641-3770-4ac4-8622-ea7ec42e1ee5 button.colab-df-convert');
+          document.querySelector('#df-9a5c7111-e6aa-4b06-b13e-16bcb4dcb76d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0fcea641-3770-4ac4-8622-ea7ec42e1ee5');
+          const element = document.querySelector('#df-9a5c7111-e6aa-4b06-b13e-16bcb4dcb76d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -628,11 +629,29 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_iris</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">data_iris</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">])</span>
 <span class="n">data_iris</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_iris</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">codes</span>
+<span class="n">data_iris</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      0
+1      0
+2      0
+3      0
+4      0
+      ..
+145    2
+146    2
+147    2
+148    2
+149    2
+Name: Class, Length: 150, dtype: int8
 </pre></div>
 </div>
 </div>
 </div>
 <p>Menyiapkan dataset</p>
+<p>membuat variabel untuk menyeleksi data dan label x = data, y = label</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">data_iris</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
@@ -641,6 +660,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>untuk mengubah label dari categorial menjadi biner</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
@@ -681,7 +701,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Mengecak akurasi clustering</p>
+<p>Mengecek akurasi clustering</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>

@@ -448,6 +448,7 @@ title="Print to PDF"
 <h1><strong>TUGAS 7 - Diabetic Retinopathy</strong><a class="headerlink" href="#tugas-7-diabetic-retinopathy" title="Permalink to this headline">#</a></h1>
 <section id="analisis-data">
 <h2>Analisis data<a class="headerlink" href="#analisis-data" title="Permalink to this headline">#</a></h2>
+<p>Untuk menghilangkan warning</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -456,16 +457,20 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Load data messidor features</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">arff</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">data</span> <span class="o">=</span><span class="n">arff</span><span class="o">.</span><span class="n">loadarff</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/SEMESTER 5/datamining/datamining/messidor_features.arff&#39;</span><span class="p">)</span>
+
+<span class="c1">#Untuk menampilkan data sebagai dataframe</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>mengubah nama fitur dari 0, 1, 2, 3,…. menjadi quality, prescreen, ‘ma2’, ‘ma3’,….</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">col_names</span><span class="o">=</span><span class="p">[]</span>
@@ -499,7 +504,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-082a0120-7732-4196-9d03-bc49666aa0aa">
+  <div id="df-ba4ed30c-a2f7-44d7-b4da-a851f7258c0c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -799,7 +804,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-082a0120-7732-4196-9d03-bc49666aa0aa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ba4ed30c-a2f7-44d7-b4da-a851f7258c0c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -850,12 +855,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-082a0120-7732-4196-9d03-bc49666aa0aa button.colab-df-convert');
+          document.querySelector('#df-ba4ed30c-a2f7-44d7-b4da-a851f7258c0c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-082a0120-7732-4196-9d03-bc49666aa0aa');
+          const element = document.querySelector('#df-ba4ed30c-a2f7-44d7-b4da-a851f7258c0c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -876,6 +881,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
+<p>Menghapus label</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">])</span>
@@ -885,7 +891,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c9df2121-5592-4e03-b554-d0b046ceef12">
+  <div id="df-7fc8bc0e-78b8-4d60-9581-535bcc9a332a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1173,7 +1179,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c9df2121-5592-4e03-b554-d0b046ceef12')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7fc8bc0e-78b8-4d60-9581-535bcc9a332a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1224,12 +1230,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c9df2121-5592-4e03-b554-d0b046ceef12 button.colab-df-convert');
+          document.querySelector('#df-7fc8bc0e-78b8-4d60-9581-535bcc9a332a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c9df2121-5592-4e03-b554-d0b046ceef12');
+          const element = document.querySelector('#df-7fc8bc0e-78b8-4d60-9581-535bcc9a332a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1253,6 +1259,9 @@ title="Print to PDF"
 </section>
 <section id="normalisasi-minmax">
 <h2>Normalisasi : MinMax<a class="headerlink" href="#normalisasi-minmax" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>untuk mengubah nilai data menjadi bernilai antara 0-1</p>
+</div></blockquote>
 <p>Rumus :</p>
 <div class="math notranslate nohighlight">
 \[x^{'} = \frac{x - x_{min}}{x_{max}-x_{min}}\]</div>
@@ -1278,7 +1287,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-75251a91-f9f6-4cac-9f20-43c6680d7e82">
+  <div id="df-dc13634e-f0f6-462b-96dc-63e36eb60362">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1543,7 +1552,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-75251a91-f9f6-4cac-9f20-43c6680d7e82')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dc13634e-f0f6-462b-96dc-63e36eb60362')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1594,12 +1603,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-75251a91-f9f6-4cac-9f20-43c6680d7e82 button.colab-df-convert');
+          document.querySelector('#df-dc13634e-f0f6-462b-96dc-63e36eb60362 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-75251a91-f9f6-4cac-9f20-43c6680d7e82');
+          const element = document.querySelector('#df-dc13634e-f0f6-462b-96dc-63e36eb60362');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1627,6 +1636,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>untuk mengecek label data ke 1-5</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -1644,6 +1654,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>karena label pada dataset bertype kategorial maka harus diubah ke biner</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>

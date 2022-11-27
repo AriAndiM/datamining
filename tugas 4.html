@@ -401,7 +401,7 @@ title="Print to PDF"
 <blockquote>
 <div><p><em>Naïve Bayes Classifier merupakan sebuah metoda klasifikasi yang berakar pada teorema Bayes . Metode pengklasifikasian dg menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes , yaitu memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes . Ciri utama dr Naïve Bayes Classifier ini adalah asumsi yg sangat kuat (naïf) akan independensi dari masing-masing kondisi / kejadian.</em></p>
 </div></blockquote>
-<p>Import Library</p>
+<p>untuk menyembunyikan warning</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -410,6 +410,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Import Library</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -450,7 +451,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2973c9b2-4bbe-4a39-b951-217d5ff04684">
+  <div id="df-f33f15e5-e42f-4df6-ac35-d8e425a86c36">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -570,7 +571,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2973c9b2-4bbe-4a39-b951-217d5ff04684')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f33f15e5-e42f-4df6-ac35-d8e425a86c36')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -621,12 +622,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2973c9b2-4bbe-4a39-b951-217d5ff04684 button.colab-df-convert');
+          document.querySelector('#df-f33f15e5-e42f-4df6-ac35-d8e425a86c36 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2973c9b2-4bbe-4a39-b951-217d5ff04684');
+          const element = document.querySelector('#df-f33f15e5-e42f-4df6-ac35-d8e425a86c36');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -657,7 +658,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0">
+  <div id="df-ccf172c0-1cde-4dcb-b076-86af97271af8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -765,7 +766,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ccf172c0-1cde-4dcb-b076-86af97271af8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -816,12 +817,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0 button.colab-df-convert');
+          document.querySelector('#df-ccf172c0-1cde-4dcb-b076-86af97271af8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5a57e6c4-be25-4dc9-8800-5bc577e6aef0');
+          const element = document.querySelector('#df-ccf172c0-1cde-4dcb-b076-86af97271af8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -855,10 +856,10 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># separate target </span>
 
-<span class="c1"># values</span>
+<span class="c1"># untuk mengambil values data</span>
 <span class="n">x</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 
-<span class="c1"># classes</span>
+<span class="c1"># untuk mengambil classes label</span>
 <span class="n">y</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 </pre></div>
 </div>
@@ -872,7 +873,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Hasil Akurasi</p>
+<p>Hasil Akurasi Naive Bayes Gaussian</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
@@ -900,7 +901,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544">
+  <div id="df-c7c9c671-26f3-4d35-bf75-325b9a353a36">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1291,7 +1292,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c7c9c671-26f3-4d35-bf75-325b9a353a36')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1342,12 +1343,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544 button.colab-df-convert');
+          document.querySelector('#df-c7c9c671-26f3-4d35-bf75-325b9a353a36 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a0f84d3d-c720-4ea3-8e6f-76b8a55bf544');
+          const element = document.querySelector('#df-c7c9c671-26f3-4d35-bf75-325b9a353a36');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

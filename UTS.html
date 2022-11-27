@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas 7 - Diabetic Retinopathy" href="tugas%207.html" />
+    <link rel="next" title="TUGAS 7 - Diabetic Retinopathy" href="tugas%207.html" />
     <link rel="prev" title="TUGAS 6-Decision Tree" href="tugas%206.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -166,7 +166,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="tugas%207.html">
    <strong>
-    Tugas 7 - Diabetic Retinopathy
+    TUGAS 7 - Diabetic Retinopathy
    </strong>
   </a>
  </li>
@@ -455,6 +455,7 @@ title="Print to PDF"
 <h1><strong>Ulangan Tengah Semester</strong><a class="headerlink" href="#ulangan-tengah-semester" title="Permalink to this headline">#</a></h1>
 <section id="knn-k-nearest-neighbor">
 <h2><strong>1. KNN (K-Nearest Neighbor)</strong><a class="headerlink" href="#knn-k-nearest-neighbor" title="Permalink to this headline">#</a></h2>
+<p>untuk menyembunyikan warning</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -473,6 +474,7 @@ title="Print to PDF"
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 </pre></div>
 </div>
 </div>
@@ -490,7 +492,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8461c632-f492-4f31-8923-f918ef4f7180">
+  <div id="df-ed6d8c66-ba7c-4b40-8673-46eb0532752d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -658,7 +660,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8461c632-f492-4f31-8923-f918ef4f7180')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ed6d8c66-ba7c-4b40-8673-46eb0532752d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -709,12 +711,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8461c632-f492-4f31-8923-f918ef4f7180 button.colab-df-convert');
+          document.querySelector('#df-ed6d8c66-ba7c-4b40-8673-46eb0532752d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8461c632-f492-4f31-8923-f918ef4f7180');
+          const element = document.querySelector('#df-ed6d8c66-ba7c-4b40-8673-46eb0532752d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -746,7 +748,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e92f1c75-1ef9-4fe7-ad2f-29436f25debe">
+  <div id="df-27c7bb91-77a3-482c-88f4-22a991371423">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -818,7 +820,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e92f1c75-1ef9-4fe7-ad2f-29436f25debe')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-27c7bb91-77a3-482c-88f4-22a991371423')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -869,12 +871,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e92f1c75-1ef9-4fe7-ad2f-29436f25debe button.colab-df-convert');
+          document.querySelector('#df-27c7bb91-77a3-482c-88f4-22a991371423 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e92f1c75-1ef9-4fe7-ad2f-29436f25debe');
+          const element = document.querySelector('#df-27c7bb91-77a3-482c-88f4-22a991371423');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -906,7 +908,7 @@ title="Print to PDF"
 <p>Kemudian membuat atau mengaktifkan fungsi klasifikasi k-nearest neighbor yang diri nama ‘classifier’ dan jumlah ketetanggaan adalah 5.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifier</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clf_knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -914,7 +916,7 @@ title="Print to PDF"
 <p>Masukkan data yang akan dianalisis kedalam model k- nearest neighbor. Data yang dimasukkan merupakan variabel x dan y dari data training.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clf_knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -927,7 +929,7 @@ title="Print to PDF"
 <p>Lalu tentukan hasil prediksi dengan model diatas dari data kanker yang dibagi menjadi x test.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf_knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
 <span class="n">y_pred</span>
 </pre></div>
 </div>
@@ -942,7 +944,7 @@ title="Print to PDF"
 <p>Hasil y prediksi dari data test adalah sebanyak 24 data dengan 8 data diklasifikasikan sebagai healthy controls dan 16 lainnya adalah patients.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifier</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clf_knn</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1010,14 +1012,16 @@ weighted avg       0.48      0.50      0.49        24
 <p>Untuk mengetahui nilai akurasi dengan model yang ada maka lakukan perhitungan berikut : (True Positive / True Negative )/ n</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#(TP/TN)/N</span>
-<span class="n">Accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="mi">6</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><span class="o">/</span><span class="mi">24</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy : &quot;</span><span class="p">,</span><span class="n">Accuracy</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc_train_knn</span> <span class="o">=</span> <span class="n">clf_knn</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">acc_test_knn</span> <span class="o">=</span> <span class="n">clf_knn</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy Training : &#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">acc_train_knn</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy Testing : &#39;</span><span class="p">,</span> <span class="n">acc_test_knn</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy :  0.6666666666666666
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy Training :  77.17 %
+Accuracy Testing :  50.0 %
 </pre></div>
 </div>
 </div>
@@ -1044,20 +1048,23 @@ weighted avg       0.48      0.50      0.49        24
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/UTS_23_0.png" src="_images/UTS_23_0.png" />
+<img alt="_images/UTS_24_0.png" src="_images/UTS_24_0.png" />
 </div>
 </div>
 <p>Menghitung Akurasidari Decision Tree</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score data train :&quot;</span><span class="p">,</span> <span class="n">clf_tree</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score data test :&quot;</span><span class="p">,</span> <span class="n">clf_tree</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc_train_tree</span> <span class="o">=</span> <span class="n">clf_tree</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">acc_test_tree</span> <span class="o">=</span> <span class="n">clf_tree</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score akurasi data train :&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">acc_train_tree</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score akurasi data test :&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">acc_test_tree</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>score data train : 1.0
-score data test : 0.5833333333333334
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>score akurasi data train : 100.0 %
+score akurasi data test : 62.5 %
 </pre></div>
 </div>
 </div>
@@ -1102,7 +1109,7 @@ score data test : 0.5833333333333334
     <a class='right-next' id="next-link" href="tugas%207.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Tugas 7 - Diabetic Retinopathy</strong></p>
+        <p class="prev-next-title"><strong>TUGAS 7 - Diabetic Retinopathy</strong></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
